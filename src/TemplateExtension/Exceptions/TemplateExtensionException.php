@@ -11,10 +11,10 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace pointybeard\Symphony\Extensions\ExtensionTemplate\Exceptions;
+namespace pointybeard\Symphony\Extensions\TemplateExtension\Exceptions;
 
 use pointybeard\Helpers\Exceptions\ReadableTrace;
 
-class ExtensionTemplateException extends ReadableTrace\ReadableTraceException
+class TemplateExtensionException extends ReadableTrace\ReadableTraceException
 {
 }

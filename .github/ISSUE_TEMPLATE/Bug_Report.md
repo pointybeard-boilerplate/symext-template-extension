@@ -4,7 +4,7 @@ about: Create a bug report
 labels: bug
 ---
 
-STOP! Your bug may have already been reported. Please search on the [issue tracker](https://github.com/pointybeard/symext_ExtensionTemplate/issues) before creating a new one.
+STOP! Your bug may have already been reported. Please search on the [issue tracker](https://github.com/pointybeard/symext-extension-template/issues) before creating a new one.
 
 ## Expected Behavior
 

@@ -11,22 +11,22 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace ExtensionTemplate\Tests;
+namespace TemplateExtension\Tests;
 
 use PHPUnit\Framework\TestCase;
-use pointybeard\Symphony\Extensions\ExtensionTemplate\Exceptions;
+use pointybeard\Symphony\Extensions\TemplateExtension\Exceptions;
 
-final class ExtensionTemplateExceptionTest extends TestCase
+final class TemplateExtensionExceptionTest extends TestCase
 {
     /**
-     * Create ExtensionTemplateException object and check that constructor
+     * Create TemplateExtensionException object and check that constructor
      * args were set correctly.
      */
     public function testValidPassArgsToConstructor(): \Exception
     {
-        $ex = new Exceptions\ExtensionTemplateException('This is a test exception', 45);
+        $ex = new Exceptions\TemplateExtensionException('This is a test exception', 45);
 
-        $this->assertTrue($ex instanceof Exceptions\ExtensionTemplateException);
+        $this->assertTrue($ex instanceof Exceptions\TemplateExtensionException);
         $this->assertEquals((string) $ex->getMessage(), 'This is a test exception');
         $this->assertEquals($ex->getCode(), 45);
         $this->assertTrue(false == empty($ex->getTrace()));
@@ -41,7 +41,7 @@ final class ExtensionTemplateExceptionTest extends TestCase
      */
     public function testValidThrowException(\Exception $ex): void
     {
-        $this->expectException(Exceptions\ExtensionTemplateException::class);
+        $this->expectException(Exceptions\TemplateExtensionException::class);
 
         throw $ex;
     }

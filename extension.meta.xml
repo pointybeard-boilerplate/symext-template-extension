@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<extension id="symext_ExtensionTemplate" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
-    <name>Extension Template</name>
-    <description>A GitHub template extension that provides a folder structure and example files for developers, allowing them to more rapidly develop new extensions.</description>
-    <repo type="github">https://github.com/pointybeard/symext_ExtensionTemplate</repo>
+<extension id="template_extension" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+    <name>Template Extension</name>
+    <description>A template that provides a standardised folder structure and example files for developers for more rapid development new extensions.</description>
+    <repo type="github">https://github.com/pointybeard/symext-extension-template</repo>
     <types>
         <type>Utility</type>
         <type>Workflow</type>

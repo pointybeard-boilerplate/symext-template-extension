@@ -1,9 +1,9 @@
 {
-    "id": "symext_ExtensionTemplate",
+    "id": "template_extension",
     "name": "Extension Template",
     "description": "A GitHub template extension that provides a folder structure and example files for developers, allowing them to more rapidly develop new extensions.",
-    "repo": "https://github.com/pointybeard/symext_ExtensionTemplate.git",
-    "homepage": "https://github.com/pointybeard/symext_ExtensionTemplate",
+    "repo": "https://github.com/pointybeard/symext-extension-template.git",
+    "homepage": "https://github.com/pointybeard/symext-extension-template",
     "type": [
         "Utility",
         "Workflow"

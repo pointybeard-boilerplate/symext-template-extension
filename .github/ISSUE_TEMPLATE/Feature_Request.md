@@ -4,7 +4,7 @@ about: "I have a suggestion!"
 labels: "enhancement"
 ---
 
-STOP! Your feature request may have already been requested. Please search on the [issue tracker](https://github.com/pointybeard/symext_ExtensionTemplate/issues) before creating a new one.
+STOP! Your feature request may have already been requested. Please search on the [issue tracker](https://github.com/pointybeard/symext-extension-template/issues) before creating a new one.
 
 ## Feature Request
 

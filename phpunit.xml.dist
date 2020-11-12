@@ -7,7 +7,7 @@
     </testsuites>
     <filter>
         <whitelist>
-            <directory suffix=".php">src/ExtensionTemplate/</directory>
+            <directory suffix=".php">src/TemplateExtension/</directory>
         </whitelist>
     </filter>
     <php>

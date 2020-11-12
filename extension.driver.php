@@ -18,10 +18,12 @@ if (!file_exists(__DIR__.'/vendor/autoload.php')) {
 require_once __DIR__.'/vendor/autoload.php';
 
 use pointybeard\Symphony\Extended;
+use pointybeard\Symphony\SectionBuilder;
+use pointybeard\Symphony\ExtensionAssetManagement;
 
 // Check if the class already exists before declaring it again.
-if (!class_exists('\\Extension_ExtenstionTemplate')) {
-    final class Extension_ExtenstionTemplate extends Extended\AbstractExtension
+if (false == class_exists('\\extension_template_extension')) {
+    final class extension_template_extension extends Extended\AbstractExtension
     {
         public function enable(): bool
         {
@@ -29,7 +31,13 @@ if (!class_exists('\\Extension_ExtenstionTemplate')) {
             // 1. Run install() to ensure critical tasks have been carried out
             $this->install();
 
-            // 2. Enable fields, events, data sources, and commands
+            (new ExtensionAssetManagement\DatasourceIterator(dirname(__FILE__) . '/src/Includes/Datasources'))
+                ->each(function(ExtensionAssetManagement\AbstractInstallableAsset $asset) {
+                    $asset->enable();
+                })
+            ;
+
+            return true;
         }
 
         public function install(): bool
@@ -38,7 +46,16 @@ if (!class_exists('\\Extension_ExtenstionTemplate')) {
             parent::install();
 
             // Build the sections
-            SectionBuilder\Import::fromJsonFile(__DIR__.'/src/Install/sections.json', SectionBuilder\Import::FLAG_SKIP_ORDERING);
+            try{
+                SectionBuilder\Import::fromJsonFile(__DIR__.'/src/Install/sections.json', SectionBuilder\Import::FLAG_SKIP_ORDERING);
+            } catch(\TypeError | \ErrorException | \Exception $e) {
+                // Hmm, not good. We'll need to throw this up
+                throw new TemplateExtension\Exceptions\TemplateExtensionException(
+                    "Unable to import sections. Files appears to be invalid. Returned: {$e->getMessage()}",
+                    0,
+                    $e
+                );
+            }
 
             return true;
         }
