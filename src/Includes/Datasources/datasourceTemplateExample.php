@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use pointybeard\Symphony\Extensions\TemplateExtension;
 
-class datasourceTemplateExample extends \SectionDatasource
+class datasourceTemplateExample extends \Datasource
 {
     public $dsParamROOTELEMENT = 'template-example';
 
