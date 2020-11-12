@@ -1,14 +1,14 @@
 # Extension Template for Symphony CMS
 
-[[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/badges/build.png?b=master)](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/build-status/master)
 
 A template extension for [Symphony CMS][ext-Symphony CMS] that provides a folder structure, tools, and examples for developers. The goal is to standardise the creation of new Extensions by pre-preparing as much as possible.
 
 -   [Installation](#installation)
--       [With Git and Composer](#with-git-and-composer)
--       [With Orchestra][#with-orchestra]
+    -   [With Git and Composer](#with-git-and-composer)
+    -   [With Orchestra](#with-orchestra)
 -   [Basic Usage](#basic-usage)
 -   [About](#about)
     -   [Requirements](#dependencies)
