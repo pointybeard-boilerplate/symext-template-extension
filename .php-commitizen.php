@@ -4,10 +4,19 @@ declare(strict_types=1);
 
 return [
     'type' => [
-        'lengthMin' => 1,
-        'lengthMax' => 5,
+        'lengthMin' => 3,
+        'lengthMax' => 8,
         'acceptExtra' => false,
-        'values' => ['feat', 'fix'],
+        'values' => [
+            'feat',
+            'fix',
+            'docs',
+            'chore',
+            'test',
+            'refactor',
+            'revert',
+            'ci',
+        ]
     ],
     'scope' => [
         'lengthMin' => 0,
@@ -17,11 +26,11 @@ return [
     ],
     'description' => [
         'lengthMin' => 1,
-        'lengthMax' => 44,
+        'lengthMax' => 47,
     ],
     'subject' => [
         'lengthMin' => 1,
-        'lengthMax' => 50,
+        'lengthMax' => 69,
     ],
     'body' => [
         'wrap' => 72,

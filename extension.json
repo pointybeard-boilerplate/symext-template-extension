@@ -1,9 +1,9 @@
 {
-    "id": "template_extension",
-    "name": "Extension Template",
+    "id": "symext-template-extension",
+    "name": "Template Extension",
     "description": "A GitHub template extension that provides a folder structure and example files for developers, allowing them to more rapidly develop new extensions.",
-    "repo": "https://github.com/pointybeard/symext-extension-template.git",
-    "homepage": "https://github.com/pointybeard/symext-extension-template",
+    "repo": "https://github.com/pointybeard/symext-template-extension.git",
+    "homepage": "https://github.com/pointybeard/symext-template-extension",
     "type": [
         "Utility",
         "Workflow"
@@ -12,7 +12,7 @@
         {
             "name": "Alannah Kearney",
             "email": "hi@alannahkearney.com",
-            "homepage": "http://alannahkearney.com",
+            "homepage": "http://www.alannahkearney.com",
             "role": "Developer"
         }
     ],

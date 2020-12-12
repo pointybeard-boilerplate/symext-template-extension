@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 $header = <<<EOF
-This file is part of the "Extension Template for Symphony CMS" repository.
+This file is part of the "Template Extension for Symphony CMS" repository.
 
 Copyright 2020 Alannah Kearney <hi@alannahkearney.com>
 

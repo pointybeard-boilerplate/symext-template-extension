@@ -1,10 +1,10 @@
-# Extension Template for Symphony CMS
+# Template Extension for Symphony CMS
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/badges/build.png?b=master)](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/build-status/master)
 
-A template extension for [Symphony CMS][ext-Symphony CMS] that provides a folder structure, tools, and examples for developers. The goal is to standardise the creation of new Extensions by pre-preparing as much as possible.
+A template extension for [Symphony CMS][ext-Symphony CMS] that provides a folder structure, tools, and examples for developers. The goal is to standardise the creation of new Extensions by pre-preparing as much as possible. Use everything in this repository as a guide when building your own extensions.
 
 -   [Installation](#installation)
     -   [With Git and Composer](#with-git-and-composer)
@@ -25,8 +25,8 @@ This is an extension for [Symphony CMS][ext-Symphony CMS]. Add it to the `/exten
 ### With Git and Composer
 
 ```bash
-$ git clone --depth 1 https://github.com/pointybeard-boilerplate/symext-template-extension.git template_extension
-$ composer update -vv --profile -d ./template_extension
+$ git clone --depth 1 https://github.com/pointybeard-boilerplate/symext-template-extension.git extensions/template_extension
+$ composer update -vv --profile -d ./extensions/template_extension
 ```
 After finishing the steps above, enable "Extension Template" though the administration interface or, if using [Orchestra][ext-Orchestra], with `bin/extension enable template_extension`.
 
@@ -46,26 +46,31 @@ After finishing the steps above, enable "Extension Template" though the administ
 2. Run the following command to rebuild your Extensions
 
 ```bash
-$ orchestra build \
+$ bin/orchestra build \
+    --skip-import-sections \
+    --database-skip-import-data \
+    --database-skip-import-structure \
     --skip-create-author \
-    --skip-skip-seeders \
+    --skip-seeders \
     --skip-git-reset \
+    --skip-composer \
     --skip-postbuild
 ```
 
 ## Basic Usage
 
-This repository is intended to be a template for your own extension projects. Everything in this README.md file serves as both documentation on how to use this template but also as an example for your own project. Follow the steps below to start customising this template to suit your project.
+This repository is intended to be a template for your own extension projects. Everything in this `README.md` file serves as both documentation on how to use this template but also as an example to modify for your own project. Follow the steps below to start customising this template to suit your project.
 
 1.   Start by deleting the `.git` directory, making way for your own project.
 
 ```bash
 $ rm -R .git/
+$ git init
 ```
 
 Alternatively, use the "Use this template" feature on the GitHub repository page (<https://github.com/pointybeard-boilerplate/symext-template-extension>).
 
-2.   Next, replace all instances of `Extension Template for Symphony CMS`, `pointybeard/symext-template-extension`, `TemplateExtension`, and `template_extension` with your own project's title and expected GitHub repository details (this can be achieved with a project wide search+replace in your favourite editor). Not that `template_extension` must be a Symphony CMS compatible extension name.
+2.   Next, replace all instances of `Template Extension for Symphony CMS`, `pointybeard/symext-template-extension`, `symext-template-extension`, `TemplateExtension`, and `template_extension` with your own project's title and expected GitHub repository details (this can be achieved with a project wide search+replace in your favourite editor). **Note that `template_extension` must be replaced with a Symphony CMS compatible extension name.**
 
 3.   Rename `src/TemplateExtension` to match the name of your extension.
 
@@ -73,7 +78,7 @@ Alternatively, use the "Use this template" feature on the GitHub repository page
 $ mv src/TemplateExtension src/MyCoolExtension
 ```
 
-4.   Update project name, author information, and project description details in `composer.json`, `extension.json`, `extension.meta.xml`, `LICENCE` and `README.md`.
+4.   Update project name, author information, and project description details in `composer.json`, `extension.json`, `extension.meta.xml`, `LICENCE`, `CHANGELOG.md`, `README.md`, and `.php_cs.dist`.
 
 5. During development, use the following commands to perform various functions like code linting and running the test suite.
 
@@ -81,7 +86,7 @@ $ mv src/TemplateExtension src/MyCoolExtension
 ## Run PHP CS Fixer over the extension codebase
 $ composer run-script tidy
 
-## Same as above, however, no file will be actually altered
+## Same as above, however, no file will actually be modified
 $ composer run-script tidyDry
 
 ## Execute the php-parallel-lint syntax checking and phpunit test suite
@@ -114,7 +119,6 @@ This extension depends on the following Composer libraries:
 -   [Symphony Section Class Mapper][dep-classmapper]
 -   [Symphony CMS: Extended Base Class Library][dep-symphony-extended]
 -   [Symphony CMS: Section Builder][dep-section-builder]
--   [Monolog - Logging for PHP][dep-monolog]
 
 ## Documentation
 
@@ -130,11 +134,11 @@ or better yet, fork the library and submit a pull request.
 We encourage you to contribute to this project. Please check out the [Contributing to this project][doc-CONTRIBUTING] documentation for guidelines about how to get involved.
 
 ## Author
--   Alannah Kearney - https://github.com/pointybeard
+-   Alannah Kearney - <https://github.com/pointybeard>
 -   See also the list of [contributors][ext-contributor] who participated in this project
 
 ## License
-"Extension Template for Symphony CMS" is released under the MIT License. See [LICENCE][doc-LICENCE] for details.
+"Template Extension for Symphony CMS" is released under the MIT License. See [LICENCE][doc-LICENCE] for details.
 
 [doc-CONTRIBUTING]: https://github.com/pointybeard-boilerplate/symext-template-extension/blob/master/CONTRIBUTING.md
 [doc-LICENCE]: http://www.opensource.org/licenses/MIT
@@ -143,7 +147,6 @@ We encourage you to contribute to this project. Please check out the [Contributi
 [dep-classmapper]: https://github.com/pointybeard/symphony-classmapper
 [dep-symphony-extended]: https://github.com/pointybeard/symphony-extended
 [dep-section-builder]: https://github.com/pointybeard/symphony-section-builder
-[dep-monolog]: https://github.com/Seldaek/monolog
 [ext-issues]: https://github.com/pointybeard-boilerplate/symext-template-extension/issues
 [ext-Symphony CMS]: http://getsymphony.com
 [ext-Orchestra]: https://github.com/pointybeard/orchestra

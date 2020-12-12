@@ -2,9 +2,18 @@
 
 declare(strict_types=1);
 
-use pointybeard\Symphony\Extensions\TemplateExtension;
+/*
+ * This file is part of the "Template Extension for Symphony CMS" repository.
+ *
+ * Copyright 2020 Alannah Kearney <hi@alannahkearney.com>
+ *
+ * For the full copyright and license information, please view the LICENCE
+ * file that was distributed with this source code.
+ */
 
-class datasourceTemplateExample extends \Datasource
+use pointybeard\Symphony\Extended;
+
+class datasourceTemplateExample extends Extended\AbstractSectionDatasource
 {
     public $dsParamROOTELEMENT = 'template-example';
 
