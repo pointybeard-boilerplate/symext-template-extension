@@ -1,8 +1,8 @@
 # Template Extension for Symphony CMS
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/badges/build.png?b=master)](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/?branch=main)
+[![Code Coverage](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/?branch=main)
+[![Build Status](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/badges/build.png?b=main)](https://scrutinizer-ci.com/g/pointybeard-boilerplate/symext-template-extension/build-status/main)
 
 A template extension for [Symphony CMS][ext-Symphony CMS] that provides a folder structure, tools, and examples for developers. The goal is to standardise the creation of new Extensions by pre-preparing as much as possible. Use everything in this repository as a guide when building your own extensions.
 
@@ -38,7 +38,7 @@ After finishing the steps above, enable "Extension Template" though the administ
 {
     "name": "template_extension",
     "repository": {
-        "url": "https://github.com/pointybeard/symext-template-extension.git",
+        "url": "https://github.com/pointybeard-boilerplate/symext-template-extension.git",
         "branch": "main",
         "target": "template_extension"
     }
@@ -72,7 +72,7 @@ $ git init
 
 Alternatively, use the "Use this template" feature on the GitHub repository page (<https://github.com/pointybeard-boilerplate/symext-template-extension>).
 
-2.   Next, replace all instances of `Template Extension for Symphony CMS`, `pointybeard/symext-template-extension`, `symext-template-extension`, `TemplateExtension`, and `template_extension` with your own project's title and expected GitHub repository details (this can be achieved with a project wide search+replace in your favourite editor). **Note that `template_extension` must be replaced with a Symphony CMS compatible extension name.**
+2.   Next, replace all instances of `Template Extension for Symphony CMS`, `pointybeard-boilerplate/symext-template-extension`, `symext-template-extension`, `TemplateExtension`, and `template_extension` with your own project's title and expected GitHub repository details (this can be achieved with a project wide search+replace in your favourite editor). **Note that `template_extension` must be replaced with a Symphony CMS compatible extension name.**
 
 3.   Rename `src/TemplateExtension` to match the name of your extension.
 
@@ -142,7 +142,7 @@ We encourage you to contribute to this project. Please check out the [Contributi
 ## License
 "Template Extension for Symphony CMS" is released under the MIT License. See [LICENCE][doc-LICENCE] for details.
 
-[doc-CONTRIBUTING]: https://github.com/pointybeard-boilerplate/symext-template-extension/blob/master/CONTRIBUTING.md
+[doc-CONTRIBUTING]: https://github.com/pointybeard-boilerplate/symext-template-extension/blob/main/CONTRIBUTING.md
 [doc-LICENCE]: http://www.opensource.org/licenses/MIT
 [req-console]: https://github.com/pointybeard/console
 [dep-helpers]: https://github.com/pointybeard/helpers
@@ -153,4 +153,4 @@ We encourage you to contribute to this project. Please check out the [Contributi
 [ext-Symphony CMS]: http://getsymphony.com
 [ext-Orchestra]: https://github.com/pointybeard/orchestra
 [ext-contributor]: https://github.com/pointybeard-boilerplate/symext-template-extension/contributors
-[ext-docs]: https://github.com/pointybeard-boilerplate/symext-template-extension/blob/master/.docs/toc.md
+[ext-docs]: https://github.com/pointybeard-boilerplate/symext-template-extension/blob/main/.docs/toc.md

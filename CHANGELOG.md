@@ -18,5 +18,5 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 #### Added
 -   Initial release
 
-[Unreleased]: https://github.com/pointybeard/symext-template-extension/compare/1.0.1...integration
-[1.0.0]: https://github.com/pointybeard/symext-template-extension/1.0.1...1.0.0
+[Unreleased]: https://github.com/pointybeard-boilerplate/symext-template-extension/compare/1.0.1...main
+[1.0.0]: https://github.com/pointybeard-boilerplate/symext-template-extension/1.0.1...1.0.0

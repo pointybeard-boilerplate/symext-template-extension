@@ -1,7 +1,7 @@
 {
-    "name": "pointybeard/symext-template-extension",
+    "name": "pointybeard-boilerplate/symext-template-extension",
     "description": "A GitHub template repository that can be used for Symphony CMS extension development",
-    "homepage": "https://github.com/pointybeard/symext-template-extension",
+    "homepage": "https://github.com/pointybeard-boilerplate/symext-template-extension",
     "license": "MIT",
     "minimum-stability": "stable",
     "keywords": [
@@ -21,7 +21,7 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/pointybeard/symext-template-extension/issues"
+        "issues": "https://github.com/pointybeard-boilerplate/symext-template-extension/issues"
     },
     "require": {
         "php": ">=7.4",

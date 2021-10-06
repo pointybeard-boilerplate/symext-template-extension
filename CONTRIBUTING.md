@@ -4,7 +4,7 @@ We encourage contribution to this project and only ask you follow some simple ru
 
 ## Found a bug?
 
-Please lodge an issue at the GitHub issue tracker for this project -- [https://github.com/pointybeard/helpers-functions-cli/issues](https://github.com/pointybeard/helpers-functions-cli/issues)
+Please lodge an issue at the GitHub issue tracker for this project -- [https://github.com/pointybeard-boilerplate/symext-template-extension/badges/issues](https://github.com/pointybeard-boilerplate/symext-template-extension/badges/issues)
 
 Include details on the behaviour you are seeing, and steps needed to reproduce the problem.
 
