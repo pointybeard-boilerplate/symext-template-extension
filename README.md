@@ -38,7 +38,9 @@ After finishing the steps above, enable "Extension Template" though the administ
 {
     "name": "template_extension",
     "repository": {
-        "url": "https://github.com/pointybeard-boilerplate/symext-template-extension.git"
+        "url": "https://github.com/pointybeard/symext-template-extension.git",
+        "branch": "main",
+        "target": "template_extension"
     }
 }
 ```
